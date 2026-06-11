@@ -3,22 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hamza El Haddad Sabri — Ciberseguridad | Pentesting · Blue Team · Malware</title>
-  <meta name="description" content="Portafolio de Hamza El Haddad Sabri, ingeniero de ciberseguridad en formación: pentesting, seguridad defensiva, análisis de malware, criptografía y HPC. Creador de ShadowScan y RedTrace.">
+  <title>Hamza El Haddad Sabri — Ciberseguridad | Pentesting · Blue Team · Threat Intel</title>
+  <meta name="description" content="Portafolio de Hamza El Haddad Sabri, ingeniero de ciberseguridad en formación: pirateo ético, detección de intrusiones, análisis de malware, threat intelligence y seguridad en la nube. Creador de ShadowScan y RedTrace.">
   <meta name="author" content="Hamza El Haddad Sabri">
-  <meta name="theme-color" content="#518F29">
+  <meta name="theme-color" content="#070a06">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Hamza El Haddad Sabri — Ciberseguridad">
-  <meta property="og:description" content="Pentesting · Seguridad de Redes · Análisis de Malware · Seguridad Defensiva · HPC. Creador de ShadowScan y RedTrace.">
+  <meta property="og:description" content="Pirateo ético · Detección de intrusiones · Análisis de malware · Threat Intelligence. Creador de ShadowScan y RedTrace.">
   <meta property="og:locale" content="es_ES">
   <meta property="og:locale:alternate" content="en_US">
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23518F29'/%3E%3Ctext x='32' y='43' font-family='-apple-system,Segoe UI,sans-serif' font-size='32' font-weight='700' fill='white' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
 
-  <!-- JSON-LD: ayuda a Google a entender quién eres -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -31,7 +30,7 @@
       { "@type": "CollegeOrUniversity", "name": "ENTI - Universitat de Barcelona" },
       { "@type": "CollegeOrUniversity", "name": "Universitat Pompeu Fabra" }
     ],
-    "knowsAbout": ["Cybersecurity", "Penetration Testing", "Network Security", "Malware Analysis", "Cryptography", "HPC", "Suricata", "Metasploit", "Wireshark", "Nmap"],
+    "knowsAbout": ["Cybersecurity", "Penetration Testing", "Intrusion Detection", "Malware Analysis", "Threat Intelligence", "Cryptography", "Cloud Security", "Digital Forensics", "Suricata", "Metasploit", "Wireshark", "Nmap"],
     "knowsLanguage": ["es", "ca", "ar", "en"],
     "sameAs": [
       "https://www.linkedin.com/in/hamzaelhaddadsabri",
@@ -42,25 +41,56 @@
 </head>
 <body>
 
-  <!-- Fondo decorativo -->
+  <!-- Iconos SVG reutilizables -->
+  <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 2.8v5.4c0 4.6-3 8.6-7 9.8-4-1.2-7-5.2-7-9.8V5.8L12 3z"/></symbol>
+    <symbol id="i-network" viewBox="0 0 24 24"><circle cx="5" cy="5.5" r="2.3"/><circle cx="19" cy="5.5" r="2.3"/><circle cx="12" cy="18.5" r="2.3"/><path d="M6.8 7.2l3.7 9.2M17.2 7.2l-3.7 9.2M7.3 5.5h9.4"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2L4.5 13.5h6L11 22l8.5-11.5h-6L13 2z"/></symbol>
+    <symbol id="i-radar" viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13.5l9 5 9-5"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M4 11.5a11.5 11.5 0 0 1 16 0"/><path d="M7.5 15a6.8 6.8 0 0 1 9 0"/><circle cx="12" cy="18.6" r="1.2"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15.5" r="3.6"/><path d="M10.7 13L20 3.5M16.5 7l2.8 2.8"/></symbol>
+    <symbol id="i-bug" viewBox="0 0 24 24"><rect x="8" y="8.5" width="8" height="11" rx="4"/><path d="M12 8.5V5.5M9.5 5.5h5M4.5 13.5h3.5M16 13.5h3.5M5.5 19.5l3-2.4M18.5 19.5l-3-2.4M5.5 8l3 2.4M18.5 8l-3 2.4"/></symbol>
+    <symbol id="i-crosshair" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.8"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18.5h10a4 4 0 0 0 .9-7.9 6 6 0 0 0-11.7-.6A4.5 4.5 0 0 0 7 18.5z"/></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3.5v17M8 20.5h8M5 7h14"/><path d="M5 7l-3 6.5a3.2 3.2 0 0 0 6 0L5 7zM19 7l-3 6.5a3.2 3.2 0 0 0 6 0L19 7z"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="15" rx="3"/><path d="M7.5 9.5l3 3-3 3M13 15.5h4"/></symbol>
+    <symbol id="i-chip" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M7 2.5V5M17 2.5V5M7 19v2.5M17 19v2.5"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="m3 7 9 6.5L21 7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.1 7-11a7 7 0 1 0-14 0c0 5.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M12 4L2 8.5 12 13l10-4.5L12 4z"/><path d="M6 11v4.2c0 1.8 12 1.8 12 0V11"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h13l-2.5 4L18 12H5"/></symbol>
+  </svg>
+
+  <!-- Fondo animado -->
+  <canvas id="netCanvas" aria-hidden="true"></canvas>
   <div class="bg-orbs" aria-hidden="true">
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
     <div class="orb orb-3"></div>
   </div>
+  <div class="bg-grid" aria-hidden="true"></div>
 
   <!-- ===== NAVBAR ===== -->
   <header class="nav-wrap">
-    <nav class="nav glass" aria-label="Principal">
+    <nav class="nav" aria-label="Principal">
       <a class="nav-logo" href="#inicio" aria-label="Inicio">
-        <span class="logo-mark">H</span>
+        <span class="logo-mark">
+          <img class="logo-photo" src="assets/foto.jpg" alt="" onerror="this.style.opacity='0'">
+          <span aria-hidden="true">H</span>
+        </span>
         <span class="logo-name">Hamza<span class="logo-dot">.</span></span>
       </a>
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#sobre-mi" data-i18n="nav_about">Sobre mí</a></li>
-        <li><a href="#habilidades" data-i18n="nav_skills">Habilidades</a></li>
+        <li><a href="#dominios" data-i18n="nav_domains">Dominios</a></li>
         <li><a href="#proyectos" data-i18n="nav_projects">Proyectos</a></li>
+        <li><a href="#certificaciones" data-i18n="nav_certs">Certificaciones</a></li>
         <li><a href="#trayectoria" data-i18n="nav_journey">Trayectoria</a></li>
         <li><a href="#contacto" data-i18n="nav_contact">Contacto</a></li>
       </ul>
@@ -83,27 +113,27 @@
     <!-- ===== HERO ===== -->
     <section class="hero container">
       <div class="hero-text">
+        <p class="terminal-line reveal">
+          <span class="t-prompt">hamza@kali:~$</span> whoami
+          <span class="t-out" id="typed"></span><span class="caret" aria-hidden="true"></span>
+        </p>
         <span class="badge reveal">
           <span class="badge-dot"></span>
           <span data-i18n="hero_badge">Disponible para nuevas oportunidades</span>
         </span>
-        <h1 class="reveal">
-          <span class="hero-hello" data-i18n="hero_hello">Hola, soy</span><br>
-          Hamza El Haddad Sabri
-        </h1>
-        <p class="hero-role reveal">
-          <span data-i18n="hero_role_prefix">Ciberseguridad</span>
-          <span class="divider">·</span>
-          <span class="rotator" id="roleRotator">Pentesting</span>
-        </p>
+        <h1 class="t-anim" id="heroTitle" data-i18n="hero_title">Pienso como un atacante.<br><span class="grad">Defiendo como un ingeniero.</span></h1>
+        <p class="hero-name reveal">Hamza El Haddad Sabri <span data-i18n="hero_name_sub">— Ingeniería de la Ciberseguridad · ENTI – Universitat de Barcelona</span></p>
         <p class="hero-lead reveal" data-i18n="hero_lead">
-          Estudiante de Ingeniería de la Ciberseguridad en ENTI – Universitat de Barcelona.
-          Diseño y construyo herramientas de seguridad reales — desde plataformas de pentesting
-          hasta simuladores de movimiento lateral — cubriendo todo el ciclo ofensivo y defensivo.
+          Formación con profundidad de máster en seguridad ofensiva y defensiva: del análisis de malware
+          y la detección de intrusiones al pirateo ético, la inteligencia contra amenazas y la seguridad
+          en la nube. Construyo mis propias herramientas de seguridad y las publico.
         </p>
         <div class="hero-cta reveal">
           <a class="btn btn-primary" href="#proyectos" data-i18n="hero_cta1">Ver proyectos</a>
-          <a class="btn btn-ghost" href="#contacto" data-i18n="hero_cta2">Hablemos</a>
+          <a class="btn btn-ghost" href="assets/CV_Hamza_El_Haddad_Sabri.pdf" download>
+            <svg class="ic"><use href="#i-download"/></svg>
+            <span data-i18n="hero_cta2">Descargar CV</span>
+          </a>
         </div>
         <div class="hero-social reveal">
           <a href="https://github.com/HamzaEnti" target="_blank" rel="noopener" aria-label="GitHub">
@@ -113,10 +143,10 @@
             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
           </a>
           <a href="mailto:hamzaelhaddadsabri@gmail.com" aria-label="Email">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="m3 7 9 6.5L21 7"/></svg>
+            <svg class="ic" style="stroke:currentColor"><use href="#i-mail"/></svg>
           </a>
           <span class="hero-location">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.1 7-11a7 7 0 1 0-14 0c0 5.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <svg class="ic"><use href="#i-pin"/></svg>
             Manresa · Barcelona
           </span>
         </div>
@@ -127,30 +157,27 @@
           <img src="assets/foto.jpg" alt="Hamza El Haddad Sabri" onerror="this.parentElement.classList.add('no-photo'); this.remove();">
           <span class="photo-fallback" aria-hidden="true">H</span>
         </div>
-        <div class="float-chip glass chip-a"><span>🛡️</span> <span data-i18n="chip_blue">Blue Team</span></div>
-        <div class="float-chip glass chip-b"><span>⚔️</span> <span data-i18n="chip_red">Pentesting</span></div>
-        <div class="float-chip glass chip-c"><span>⚡</span> CUDA · HPC</div>
       </div>
     </section>
 
     <!-- ===== STATS ===== -->
     <section class="container">
-      <div class="stats glass reveal">
+      <div class="stats glass reveal" id="statsBox">
         <div class="stat">
-          <span class="stat-num">7+</span>
-          <span class="stat-label" data-i18n="stat1">Proyectos open source</span>
+          <span class="stat-num"><span class="count" data-n="7">0</span>+</span>
+          <span class="stat-label" data-i18n="stat1">Proyectos publicados</span>
         </div>
         <div class="stat">
-          <span class="stat-num">10<span class="stat-sub">/10</span></span>
-          <span class="stat-label" data-i18n="stat2">en Análisis y Gestión de Riesgos</span>
+          <span class="stat-num"><span class="count" data-n="12">0</span></span>
+          <span class="stat-label" data-i18n="stat2">Dominios de seguridad</span>
         </div>
         <div class="stat">
-          <span class="stat-num">4</span>
-          <span class="stat-label" data-i18n="stat3">Idiomas (EN C1)</span>
+          <span class="stat-num"><span class="count" data-n="30">0</span>+</span>
+          <span class="stat-label" data-i18n="stat3">Herramientas dominadas</span>
         </div>
         <div class="stat">
-          <span class="stat-num">20+</span>
-          <span class="stat-label" data-i18n="stat4">Herramientas y tecnologías</span>
+          <span class="stat-num"><span class="count" data-n="4">0</span></span>
+          <span class="stat-label" data-i18n="stat4">Idiomas (EN C1)</span>
         </div>
       </div>
     </section>
@@ -158,40 +185,42 @@
     <!-- ===== SOBRE MÍ ===== -->
     <section id="sobre-mi" class="container section">
       <p class="eyebrow reveal" data-i18n="about_eyebrow">Sobre mí</p>
-      <h2 class="reveal" data-i18n="about_title">Seguridad ofensiva y defensiva,<br>con mentalidad de builder.</h2>
+      <h2 class="t-anim" data-i18n="about_title">Ofensiva y defensiva.<br><span class="grad">Teoría y herramientas reales.</span></h2>
       <div class="about-grid">
         <div class="about-text reveal">
           <p data-i18n="about_p1">
-            Soy estudiante de <strong>Ingeniería de la Ciberseguridad en ENTI – Universitat de Barcelona</strong>
-            con un expediente sobresaliente y experiencia práctica en todo el ciclo de vida de la seguridad:
-            reconocimiento pasivo y activo, OSINT, escaneo y enumeración de servicios, investigación y explotación
-            de CVEs con Metasploit y técnicas manuales, y detección de intrusiones con Suricata IDS/IPS.
+            Estudio <strong>Ingeniería de la Ciberseguridad en ENTI – Universitat de Barcelona</strong>, un plan
+            de estudios con la profundidad de un máster: protección perimetral, detección de intrusiones,
+            criptografía, análisis de malware, forense digital, pirateo ético, inteligencia contra amenazas
+            y seguridad en la nube. He trabajado el ciclo completo de un ataque — reconocimiento, OSINT,
+            enumeración, explotación de CVEs y movimiento lateral — y el ciclo completo de su defensa:
+            hardening, reglas de Suricata, análisis de tráfico, correlación en SIEM y respuesta a incidentes.
           </p>
           <p data-i18n="about_p2">
-            No me limito a la teoría: <strong>construyo mis propias herramientas</strong>. He desarrollado una
-            plataforma unificada de pentesting (ShadowScan), un simulador de movimiento lateral basado en grafos
-            (RedTrace) y criptoanálisis acelerado por GPU con CUDA. Practico de forma constante en TryHackMe y
-            utilizo IA de forma avanzada para acelerar investigación, threat intelligence y revisión de código.
+            Mi diferencia: <strong>no me quedo en el laboratorio</strong>. Construyo herramientas ofensivas
+            y defensivas propias, las documento y las publico en GitHub. Practico de forma constante en
+            TryHackMe y aplico IA de forma avanzada para acelerar investigación, threat intelligence y
+            revisión de código.
           </p>
         </div>
         <div class="about-cards">
           <div class="mini-card glass reveal">
-            <span class="mini-icon">⚔️</span>
+            <svg class="ic"><use href="#i-crosshair"/></svg>
             <h3 data-i18n="ac1_t">Ofensiva</h3>
             <p data-i18n="ac1_d">Recon, OSINT, explotación de CVEs, Metasploit, escalada de privilegios.</p>
           </div>
           <div class="mini-card glass reveal">
-            <span class="mini-icon">🛡️</span>
+            <svg class="ic"><use href="#i-shield"/></svg>
             <h3 data-i18n="ac2_t">Defensiva</h3>
-            <p data-i18n="ac2_d">Suricata IDS/IPS, análisis de tráfico, respuesta a incidentes, hardening.</p>
+            <p data-i18n="ac2_d">Suricata IDS/IPS, análisis de tráfico, SIEM, respuesta a incidentes.</p>
           </div>
           <div class="mini-card glass reveal">
-            <span class="mini-icon">🧰</span>
+            <svg class="ic"><use href="#i-terminal"/></svg>
             <h3 data-i18n="ac3_t">Builder</h3>
             <p data-i18n="ac3_d">Herramientas de seguridad propias, publicadas y documentadas en GitHub.</p>
           </div>
           <div class="mini-card glass reveal">
-            <span class="mini-icon">🤖</span>
+            <svg class="ic"><use href="#i-chip"/></svg>
             <h3 data-i18n="ac4_t">IA aplicada</h3>
             <p data-i18n="ac4_d">Workflows con IA para investigación, threat intel y revisión de código.</p>
           </div>
@@ -199,75 +228,187 @@
       </div>
     </section>
 
-    <!-- ===== HABILIDADES ===== -->
-    <section id="habilidades" class="container section">
-      <p class="eyebrow reveal" data-i18n="skills_eyebrow">Habilidades</p>
-      <h2 class="reveal" data-i18n="skills_title">Arsenal técnico.</h2>
-      <p class="section-lead reveal" data-i18n="skills_lead">Del exploit al informe: cubro la cadena completa.</p>
+    <!-- ===== DOMINIOS ===== -->
+    <section id="dominios" class="container section">
+      <p class="eyebrow reveal" data-i18n="dom_eyebrow">Dominios</p>
+      <h2 class="t-anim" data-i18n="dom_title">Dominios de seguridad.</h2>
+      <p class="section-lead reveal" data-i18n="dom_lead">Del perímetro al endpoint, del exploit al informe de cumplimiento.</p>
 
       <div class="skills-grid">
         <div class="skill-card glass reveal">
-          <h3>⚔️ <span data-i18n="sk1">Ofensiva &amp; Pentesting</span></h3>
+          <h3><svg class="ic"><use href="#i-shield"/></svg><span data-i18n="d1">Protección Perimetral</span></h3>
           <div class="chips">
-            <span>Nmap</span><span>Metasploit</span><span>Burp Suite</span><span>Nessus / OpenVAS</span>
-            <span>OSINT</span><span data-i18n="sk1_c1">Explotación de CVEs</span><span data-i18n="sk1_c2">Escalada de privilegios</span>
+            <span>Firewalls stateful · L7</span><span>DMZ</span><span data-i18n="d1_c1">Doble firewall</span>
+            <span data-i18n="d1_c2">Defensa en profundidad</span><span>LAN · WAN · DMZ</span><span>ACLs</span>
           </div>
         </div>
         <div class="skill-card glass reveal">
-          <h3>🛡️ <span data-i18n="sk2">Defensiva &amp; Blue Team</span></h3>
+          <h3><svg class="ic"><use href="#i-network"/></svg><span data-i18n="d2">Segmentación y VLANs</span></h3>
           <div class="chips">
-            <span>Suricata IDS/IPS</span><span>Snort</span><span>SIEM</span>
-            <span data-i18n="sk2_c1">Análisis de logs</span><span data-i18n="sk2_c2">Respuesta a incidentes</span><span>Hardening</span>
+            <span>VLANs</span><span data-i18n="d2_c1">Dominios de broadcast</span><span data-i18n="d2_c2">Enlaces troncales</span>
+            <span>ACL inter-VLAN</span><span>NAT · DHCP · DNS</span>
           </div>
         </div>
         <div class="skill-card glass reveal">
-          <h3>🌐 <span data-i18n="sk3">Redes &amp; Ataques</span></h3>
+          <h3><svg class="ic"><use href="#i-zap"/></svg><span data-i18n="d3">Ataques de Red</span></h3>
           <div class="chips">
-            <span>Wireshark</span><span>Tcpdump</span><span>Scapy</span><span>DoS / DDoS</span>
-            <span>ARP Spoofing</span><span>Firewalls</span><span>VLANs</span><span>DNS · DHCP · Routing</span>
+            <span>DoS / DDoS</span><span>SYN Flood</span><span>ICMP · HTTP Flood</span>
+            <span>ARP Spoofing</span><span data-i18n="d3_c1">Análisis por capa OSI</span>
           </div>
         </div>
         <div class="skill-card glass reveal">
-          <h3>🔐 <span data-i18n="sk4">Criptografía</span></h3>
+          <h3><svg class="ic"><use href="#i-radar"/></svg><span data-i18n="d4">Detección de Intrusos</span></h3>
           <div class="chips">
-            <span>RSA</span><span>AES</span><span>PKI</span><span data-i18n="sk4_c1">Firmas digitales</span>
-            <span>Hashing</span><span data-i18n="sk4_c2">Gestión de claves</span>
+            <span data-i18n="d4_c1">Suricata · escritura y tuning de reglas</span><span>Snort</span>
+            <span>NIPS · HIPS</span><span>SPAN · TAP</span><span>Emerging Threats</span>
           </div>
         </div>
         <div class="skill-card glass reveal">
-          <h3>💻 <span data-i18n="sk5">Programación</span></h3>
+          <h3><svg class="ic"><use href="#i-layers"/></svg><span data-i18n="d5">SIEM y Correlación</span></h3>
           <div class="chips">
-            <span>Python</span><span>C / C++</span><span>Go</span><span>Java</span>
-            <span>Bash</span><span>SQL</span><span>JavaScript</span>
+            <span data-i18n="d5_c1">Pipeline SIEM</span><span data-i18n="d5_c2">Correlación de eventos</span>
+            <span data-i18n="d5_c3">Análisis de logs</span><span data-i18n="d5_c4">Monitorización</span>
           </div>
         </div>
         <div class="skill-card glass reveal">
-          <h3>⚡ <span data-i18n="sk6">HPC &amp; Paralelismo</span></h3>
+          <h3><svg class="ic"><use href="#i-lock"/></svg><span data-i18n="d6">VPN y Túneles Seguros</span></h3>
           <div class="chips">
-            <span>CUDA / GPGPU</span><span>OpenMP</span><span>MPI</span><span data-i18n="sk6_c1">Criptoanálisis</span>
+            <span>IPSec · IKE</span><span data-i18n="d6_c1">Modo túnel / transporte</span><span>NAT-T</span>
+            <span>ZTNA · SASE</span><span data-i18n="d6_c2">Post-cuántica (ML-KEM)</span>
           </div>
         </div>
         <div class="skill-card glass reveal">
-          <h3>☁️ <span data-i18n="sk7">Cloud &amp; DevSecOps</span></h3>
+          <h3><svg class="ic"><use href="#i-wifi"/></svg><span data-i18n="d7">Seguridad Wireless</span></h3>
           <div class="chips">
-            <span>AWS</span><span>Azure</span><span>IAM</span><span>Security Groups</span>
-            <span data-i18n="sk7_c1">Hardening cloud</span><span>S3 Security</span>
+            <span>WPA2 / WPA3</span><span>Rogue AP · Evil Twin</span>
+            <span data-i18n="d7_c1">Auditoría WLAN</span><span data-i18n="d7_c2">Hardening de APs</span>
           </div>
         </div>
         <div class="skill-card glass reveal">
-          <h3>🧬 <span data-i18n="sk8">Malware &amp; GRC</span></h3>
+          <h3><svg class="ic"><use href="#i-key"/></svg><span data-i18n="d8">Criptografía</span></h3>
           <div class="chips">
-            <span data-i18n="sk8_c1">Análisis estático y dinámico</span><span>Sandboxing</span>
-            <span>ISO 27001</span><span>ENS</span><span>GDPR</span><span>NIST</span><span data-i18n="sk8_c2">Modelado de amenazas</span>
+            <span>RSA · AES</span><span>PKI</span><span data-i18n="d8_c1">Firmas digitales</span>
+            <span>Hashing</span><span data-i18n="d8_c2">Gestión de claves</span>
           </div>
         </div>
-        <div class="skill-card glass reveal wide">
-          <h3>🐧 <span data-i18n="sk9">Sistemas, Datos e IA</span></h3>
+        <div class="skill-card glass reveal">
+          <h3><svg class="ic"><use href="#i-bug"/></svg><span data-i18n="d9">Análisis de Malware</span></h3>
           <div class="chips">
-            <span>Linux (Arch · Debian · Kali)</span><span>systemd</span><span data-i18n="sk9_c1">Automatización Bash/Python</span>
-            <span>MySQL</span><span>PostgreSQL</span><span>SQLite</span><span data-i18n="sk9_c2">SQL avanzado</span>
-            <span data-i18n="sk9_c3">IA aplicada (Claude · ChatGPT · Copilot)</span>
+            <span data-i18n="d9_c1">Análisis estático y dinámico</span><span data-i18n="d9_c2">Tipología</span>
+            <span data-i18n="d9_c3">Ofuscación</span><span>Sandboxing</span>
           </div>
+        </div>
+        <div class="skill-card glass reveal">
+          <h3><svg class="ic"><use href="#i-crosshair"/></svg><span data-i18n="d10">Pirateo Ético</span></h3>
+          <div class="chips">
+            <span>Recon · OSINT</span><span>Nmap · Nessus</span><span data-i18n="d10_c1">Explotación de CVEs</span>
+            <span>Metasploit</span><span data-i18n="d10_c2">Escalada de privilegios</span>
+          </div>
+        </div>
+        <div class="skill-card glass reveal">
+          <h3><svg class="ic"><use href="#i-eye"/></svg><span data-i18n="d11">Threat Intelligence</span></h3>
+          <div class="chips">
+            <span>CTI</span><span>Threat hunting</span><span data-i18n="d11_c1">OSINT avanzado</span>
+            <span>MITRE ATT&amp;CK</span>
+          </div>
+        </div>
+        <div class="skill-card glass reveal">
+          <h3><svg class="ic"><use href="#i-cloud"/></svg><span data-i18n="d12">Cloud y GRC</span></h3>
+          <div class="chips">
+            <span>AWS · Azure · IAM</span><span>SD-WAN · SASE</span><span>ISO 27001 · ENS</span>
+            <span>GDPR · NIST</span><span data-i18n="d12_c1">Gestión de riesgos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMACIÓN (plan docente) ===== -->
+    <section id="formacion" class="container section">
+      <p class="eyebrow reveal" data-i18n="edu_eyebrow">Formación</p>
+      <h2 class="t-anim" data-i18n="edu_title">Un plan de estudios con<br><span class="grad">profundidad de máster.</span></h2>
+      <p class="section-lead reveal" data-i18n="edu_lead">Bloques de conocimiento cursados en Ingeniería de la Ciberseguridad (ENTI – UB).</p>
+
+      <div class="edu-grid">
+        <div class="edu-card glass reveal">
+          <span class="edu-num">01</span>
+          <h3 data-i18n="e1">Seguridad de Redes e Infraestructura</h3>
+          <div class="chips chips-sm">
+            <span>Firewalls · DMZ</span><span>IDS / IPS</span><span>VPN · IPSec</span>
+            <span>SD-WAN</span><span data-i18n="e1_c1">Seguridad Wireless</span><span>SIEM</span>
+          </div>
+        </div>
+        <div class="edu-card glass reveal">
+          <span class="edu-num">02</span>
+          <h3 data-i18n="e2">Seguridad Ofensiva</h3>
+          <div class="chips chips-sm">
+            <span data-i18n="e2_c1">Pirateo ético</span><span data-i18n="e2_c2">Análisis y tipología de malware</span>
+            <span data-i18n="e2_c3">Inteligencia contra amenazas</span><span data-i18n="e2_c4">Control de acceso</span>
+          </div>
+        </div>
+        <div class="edu-card glass reveal">
+          <span class="edu-num">03</span>
+          <h3 data-i18n="e3">Criptografía y Protección de Datos</h3>
+          <div class="chips chips-sm">
+            <span data-i18n="e3_c1">Criptografía aplicada</span><span data-i18n="e3_c2">Seguridad de bases de datos</span>
+            <span data-i18n="e3_c3">Ciclo de vida y protección del dato</span>
+          </div>
+        </div>
+        <div class="edu-card glass reveal">
+          <span class="edu-num">04</span>
+          <h3 data-i18n="e4">Gobierno, Riesgo y Cumplimiento</h3>
+          <div class="chips chips-sm">
+            <span data-i18n="e4_c1">Análisis y gestión de riesgos</span><span data-i18n="e4_c2">Gobernanza y estándares</span>
+            <span data-i18n="e4_c3">Forense digital</span><span>ISO 27001 · ENS · GDPR</span>
+          </div>
+        </div>
+        <div class="edu-card glass reveal">
+          <span class="edu-num">05</span>
+          <h3 data-i18n="e5">Desarrollo Seguro</h3>
+          <div class="chips chips-sm">
+            <span data-i18n="e5_c1">Programación segura (SDLC)</span><span data-i18n="e5_c2">Desarrollo web seguro</span>
+            <span data-i18n="e5_c3">Seguridad en la nube</span><span data-i18n="e5_c4">Desarrollos innovadores</span>
+          </div>
+        </div>
+        <div class="edu-card glass reveal">
+          <span class="edu-num">06</span>
+          <h3 data-i18n="e6">IA y Datos aplicados a Ciberseguridad</h3>
+          <div class="chips chips-sm">
+            <span data-i18n="e6_c1">IA aplicada a ciberseguridad</span><span data-i18n="e6_c2">Captura y seguridad de datos</span>
+            <span data-i18n="e6_c3">Automatización de análisis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STACK ===== -->
+    <section id="stack" class="container section">
+      <p class="eyebrow reveal" data-i18n="st_eyebrow">Stack</p>
+      <h2 class="t-anim" data-i18n="st_title">Herramientas de trabajo.</h2>
+
+      <div class="stack-grid" style="margin-top:36px">
+        <div class="stack-group glass reveal">
+          <h3 data-i18n="stg1">Análisis de red</h3>
+          <div class="chips chips-mono"><span>Wireshark</span><span>Tcpdump</span><span>Scapy</span><span>hping3</span></div>
+        </div>
+        <div class="stack-group glass reveal">
+          <h3 data-i18n="stg2">Ofensiva</h3>
+          <div class="chips chips-mono"><span>Nmap</span><span>Metasploit</span><span>Burp Suite</span><span>Nessus</span><span>OpenVAS</span><span>arpspoof</span></div>
+        </div>
+        <div class="stack-group glass reveal">
+          <h3 data-i18n="stg3">Defensiva</h3>
+          <div class="chips chips-mono"><span>Suricata</span><span>Snort</span><span>iptables</span><span>ss</span><span>sar</span><span>ab</span></div>
+        </div>
+        <div class="stack-group glass reveal">
+          <h3 data-i18n="stg4">Sistemas</h3>
+          <div class="chips chips-mono"><span>Kali Linux</span><span>Arch</span><span>Debian</span><span>Bash</span><span>systemd</span></div>
+        </div>
+        <div class="stack-group glass reveal">
+          <h3 data-i18n="stg5">Lenguajes</h3>
+          <div class="chips chips-mono"><span>Python</span><span>C / C++</span><span>Go</span><span>Java</span><span>SQL</span><span>JavaScript</span></div>
+        </div>
+        <div class="stack-group glass reveal">
+          <h3 data-i18n="stg6">Cloud y datos</h3>
+          <div class="chips chips-mono"><span>AWS</span><span>Azure</span><span>IAM</span><span>MySQL</span><span>PostgreSQL</span><span>SQLite</span></div>
         </div>
       </div>
     </section>
@@ -275,68 +416,74 @@
     <!-- ===== PROYECTOS ===== -->
     <section id="proyectos" class="container section">
       <p class="eyebrow reveal" data-i18n="proj_eyebrow">Proyectos</p>
-      <h2 class="reveal" data-i18n="proj_title">Herramientas reales,<br>código abierto.</h2>
-      <p class="section-lead reveal" data-i18n="proj_lead">Todo publicado en GitHub. Sin humo.</p>
+      <h2 class="t-anim" data-i18n="proj_title">Herramientas reales,<br><span class="grad">código abierto.</span></h2>
+      <p class="section-lead reveal" data-i18n="proj_lead">Todo publicado y verificable en GitHub.</p>
 
       <div class="projects-grid">
         <article class="project glass reveal">
-          <div class="project-top">
-            <h3>RedTrace</h3>
-            <a class="project-link" href="https://github.com/HamzaEnti/RedTrace" target="_blank" rel="noopener" aria-label="RedTrace en GitHub">↗</a>
-          </div>
-          <p class="project-sub" data-i18n="pr1_s">Simulador de movimiento lateral</p>
-          <p data-i18n="pr1_d">Modela redes corporativas como grafos dirigidos ponderados y usa Dijkstra para descubrir las rutas de ataque óptimas entre hosts, replicando TTPs reales de MITRE ATT&amp;CK: escalada de privilegios, bypass de segmentación y pivoting multi-salto.</p>
-          <div class="chips chips-sm"><span>Python</span><span data-i18n="pr1_c1">Teoría de grafos</span><span>MITRE ATT&amp;CK</span></div>
-        </article>
-
-        <article class="project glass reveal">
+          <span class="project-tag" data-i18n="pt_off">Ofensiva</span>
           <div class="project-top">
             <h3>ShadowScan</h3>
             <a class="project-link" href="https://github.com/HamzaEnti/ShadowScan" target="_blank" rel="noopener" aria-label="ShadowScan en GitHub">↗</a>
           </div>
           <p class="project-sub" data-i18n="pr2_s">Plataforma unificada de pentesting</p>
-          <p data-i18n="pr2_d">Aplicación profesional con interfaz gráfica que centraliza escaneo de puertos, fingerprinting de servicios y descubrimiento de vulnerabilidades, con informes estructurados y exportables para auditorías repetibles.</p>
+          <p class="project-desc" data-i18n="pr2_d">Aplicación profesional con interfaz gráfica que centraliza escaneo de puertos, fingerprinting de servicios y descubrimiento de vulnerabilidades, con informes estructurados y exportables para auditorías repetibles.</p>
           <div class="chips chips-sm"><span>Python</span><span>GUI</span><span>Nmap</span></div>
         </article>
 
         <article class="project glass reveal">
+          <span class="project-tag">Red Team</span>
           <div class="project-top">
-            <h3>Parallel-Programming-C</h3>
-            <a class="project-link" href="https://github.com/HamzaEnti/Parallel-Programming-C" target="_blank" rel="noopener" aria-label="Parallel Programming C en GitHub">↗</a>
+            <h3>RedTrace</h3>
+            <a class="project-link" href="https://github.com/HamzaEnti/RedTrace" target="_blank" rel="noopener" aria-label="RedTrace en GitHub">↗</a>
           </div>
-          <p class="project-sub" data-i18n="pr3_s">Criptoanálisis acelerado por GPU</p>
-          <p data-i18n="pr3_d">Cracking de contraseñas por fuerza bruta con CUDA y algoritmos paralelos optimizados con OpenMP y MPI para clústeres HPC: criptoanálisis aplicado con rendimiento de nivel GPGPU.</p>
-          <div class="chips chips-sm"><span>C</span><span>CUDA</span><span>OpenMP</span><span>MPI</span></div>
+          <p class="project-sub" data-i18n="pr1_s">Simulador de movimiento lateral</p>
+          <p class="project-desc" data-i18n="pr1_d">Modela redes corporativas como grafos y descubre las rutas de ataque óptimas entre hosts, replicando TTPs reales de MITRE ATT&amp;CK: escalada de privilegios, bypass de segmentación y pivoting multi-salto.</p>
+          <div class="chips chips-sm"><span>Python</span><span>MITRE ATT&amp;CK</span><span data-i18n="pr1_c1">Grafos de ataque</span></div>
         </article>
 
         <article class="project glass reveal">
+          <span class="project-tag" data-i18n="pt_crypto">Criptoanálisis</span>
+          <div class="project-top">
+            <h3 data-i18n="pr3_t">Password Cracking Engine</h3>
+            <a class="project-link" href="https://github.com/HamzaEnti/Parallel-Programming-C" target="_blank" rel="noopener" aria-label="Password Cracking Engine en GitHub">↗</a>
+          </div>
+          <p class="project-sub" data-i18n="pr3_s">Criptoanálisis acelerado por GPU</p>
+          <p class="project-desc" data-i18n="pr3_d">Motor de cracking de contraseñas por fuerza bruta acelerado por GPU: demuestra en la práctica por qué las contraseñas débiles caen en segundos y cómo se dimensiona un ataque de criptoanálisis real.</p>
+          <div class="chips chips-sm"><span>C</span><span>GPU</span><span data-i18n="pr3_c1">Fuerza bruta</span></div>
+        </article>
+
+        <article class="project glass reveal">
+          <span class="project-tag" data-i18n="pt_crypto2">Criptografía</span>
           <div class="project-top">
             <h3>RainbowWarriors</h3>
             <a class="project-link" href="https://github.com/HamzaEnti/RainbowWarriors" target="_blank" rel="noopener" aria-label="RainbowWarriors en GitHub">↗</a>
           </div>
           <p class="project-sub" data-i18n="pr4_s">Gestor de contraseñas seguro</p>
-          <p data-i18n="pr4_d">Cifrado AES con derivación segura de claves y defensa en profundidad: protección de clave maestra, validación de integridad y manejo seguro de credenciales en memoria.</p>
+          <p class="project-desc" data-i18n="pr4_d">Cifrado AES con derivación segura de claves y defensa en profundidad: protección de clave maestra, validación de integridad y manejo seguro de credenciales en memoria.</p>
           <div class="chips chips-sm"><span>Python</span><span>AES</span><span data-i18n="pr4_c1">Criptografía aplicada</span></div>
         </article>
 
         <article class="project glass reveal">
+          <span class="project-tag">Blue Team</span>
           <div class="project-top">
-            <h3>go-raft-consensus</h3>
-            <a class="project-link" href="https://github.com/HamzaEnti/go-raft-consensus" target="_blank" rel="noopener" aria-label="go-raft-consensus en GitHub">↗</a>
+            <h3 data-i18n="pr5_t">Cybersecurity Labs</h3>
+            <a class="project-link" href="https://github.com/HamzaEnti/Cybersecurity-Year-Recap-2024-2025" target="_blank" rel="noopener" aria-label="Cybersecurity Labs en GitHub">↗</a>
           </div>
-          <p class="project-sub" data-i18n="pr5_s">Sistemas distribuidos desde cero</p>
-          <p data-i18n="pr5_d">Implementación completa del algoritmo de consenso Raft en Go: elección de líder, heartbeats y replicación de logs tolerante a fallos. Ingeniería directamente aplicable a arquitecturas cloud-native.</p>
-          <div class="chips chips-sm"><span>Go</span><span>Raft</span><span data-i18n="pr5_c1">Sistemas distribuidos</span></div>
+          <p class="project-sub" data-i18n="pr5_s">Laboratorios completos de ciberseguridad</p>
+          <p class="project-desc" data-i18n="pr5_d">Colección de laboratorios reales: análisis de malware, diseño de redes seguras, seguridad de bases de datos y administración de sistemas. La práctica que respalda la teoría.</p>
+          <div class="chips chips-sm"><span>Python</span><span>C</span><span>SQL</span><span>Networking</span></div>
         </article>
 
         <article class="project glass reveal">
+          <span class="project-tag">Web Security</span>
           <div class="project-top">
-            <h3>ZalandoBot</h3>
-            <a class="project-link" href="https://github.com/HamzaEnti/ZalandoBot" target="_blank" rel="noopener" aria-label="ZalandoBot en GitHub">↗</a>
+            <h3 data-i18n="pr6_t">Browser Automation Research</h3>
+            <a class="project-link" href="https://github.com/HamzaEnti/ZalandoBot" target="_blank" rel="noopener" aria-label="Browser Automation Research en GitHub">↗</a>
           </div>
-          <p class="project-sub" data-i18n="pr6_s">Automatización de navegador</p>
-          <p data-i18n="pr6_d">Extensión de Chrome con manipulación del DOM y extracción de datos en tiempo real — habilidades directamente aplicables al análisis de vulnerabilidades web como XSS y CSRF.</p>
-          <div class="chips chips-sm"><span>JavaScript</span><span>Chrome API</span><span data-i18n="pr6_c1">Web scraping</span></div>
+          <p class="project-sub" data-i18n="pr6_s">Automatización e investigación web</p>
+          <p class="project-desc" data-i18n="pr6_d">Extensión de Chrome con manipulación del DOM y extracción de datos en tiempo real: la base técnica del análisis de vulnerabilidades web como XSS y CSRF.</p>
+          <div class="chips chips-sm"><span>JavaScript</span><span>Chrome API</span><span>DOM</span></div>
         </article>
       </div>
 
@@ -345,10 +492,64 @@
       </div>
     </section>
 
+    <!-- ===== RUTA ===== -->
+    <section id="ruta" class="container section">
+      <p class="eyebrow reveal" data-i18n="rt_eyebrow">Ruta</p>
+      <h2 class="t-anim" data-i18n="rt_title">Mi ruta de aprendizaje.</h2>
+      <p class="section-lead reveal" data-i18n="rt_lead">De los fundamentos de red al threat hunting, paso a paso.</p>
+
+      <div class="route">
+        <div class="route-step glass reveal"><span class="route-num">01</span><h3 data-i18n="r1">Fundamentos de red</h3><p>TCP/IP · OSI</p></div>
+        <div class="route-step glass reveal"><span class="route-num">02</span><h3 data-i18n="r2">Análisis de tráfico</h3><p>Wireshark · Tcpdump</p></div>
+        <div class="route-step glass reveal"><span class="route-num">03</span><h3 data-i18n="r3">Ataques de red</h3><p>DoS · ARP Spoofing</p></div>
+        <div class="route-step glass reveal"><span class="route-num">04</span><h3 data-i18n="r4">Detección y prevención</h3><p>Suricata IDS/IPS</p></div>
+        <div class="route-step glass reveal"><span class="route-num">05</span><h3 data-i18n="r5">Criptografía</h3><p>AES · RSA · PKI</p></div>
+        <div class="route-step glass reveal"><span class="route-num">06</span><h3 data-i18n="r6">Análisis de malware</h3><p data-i18n="r6_p">Estático · Dinámico</p></div>
+        <div class="route-step glass reveal"><span class="route-num">07</span><h3 data-i18n="r7">Pirateo ético</h3><p>Recon · Metasploit</p></div>
+        <div class="route-step glass reveal"><span class="route-num">08</span><h3 data-i18n="r8">Threat Intelligence</h3><p>CTI · MITRE ATT&amp;CK</p></div>
+        <div class="route-step glass reveal"><span class="route-num">09</span><h3 data-i18n="r9">Cloud y GRC</h3><p>SASE · ISO 27001</p></div>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICACIONES ===== -->
+    <section id="certificaciones" class="container section">
+      <p class="eyebrow reveal" data-i18n="ce_eyebrow">Certificaciones</p>
+      <h2 class="t-anim" data-i18n="ce_title">Roadmap de certificaciones.</h2>
+      <p class="section-lead reveal" data-i18n="ce_lead">Objetivos definidos, en orden. El destino: OSCP+.</p>
+
+      <div class="certs-road">
+        <div class="cert-card glass reveal">
+          <span class="cert-status" data-i18n="ce1_st">En preparación</span>
+          <h3>eJPT</h3>
+          <p class="cert-org">INE Security</p>
+          <p data-i18n="ce1_d">Pentesting junior 100% práctico: la primera validación oficial del camino ofensivo.</p>
+        </div>
+        <div class="cert-card glass reveal">
+          <span class="cert-status" data-i18n="ce2_st">Siguiente objetivo</span>
+          <h3>Security+</h3>
+          <p class="cert-org">CompTIA</p>
+          <p data-i18n="ce2_d">La base de seguridad reconocida globalmente por toda la industria.</p>
+        </div>
+        <div class="cert-card glass reveal">
+          <span class="cert-status" data-i18n="ce3_st">Objetivo intermedio</span>
+          <h3>CPTS</h3>
+          <p class="cert-org">Hack The Box</p>
+          <p data-i18n="ce3_d">Pentesting profesional sobre máquinas y escenarios de dificultad realista.</p>
+        </div>
+        <div class="cert-card glass cert-final reveal">
+          <span class="cert-status" data-i18n="ce4_st">Objetivo final</span>
+          <h3>OSCP+</h3>
+          <p class="cert-org">OffSec</p>
+          <p data-i18n="ce4_d">El estándar de oro del pentesting ofensivo. Try Harder.</p>
+        </div>
+      </div>
+      <p class="certs-note reveal" data-i18n="ce_note">// mientras tanto: práctica continua en TryHackMe — labs, retos y CTFs</p>
+    </section>
+
     <!-- ===== TRAYECTORIA ===== -->
     <section id="trayectoria" class="container section">
       <p class="eyebrow reveal" data-i18n="tl_eyebrow">Trayectoria</p>
-      <h2 class="reveal" data-i18n="tl_title">Formación y experiencia.</h2>
+      <h2 class="t-anim" data-i18n="tl_title">Formación y experiencia.</h2>
 
       <div class="timeline">
         <div class="tl-item reveal">
@@ -357,7 +558,7 @@
             <span class="tl-date">Sep 2024 — <span data-i18n="tl_now">Actualidad</span></span>
             <h3 data-i18n="tl1_t">Grado en Ingeniería de la Ciberseguridad</h3>
             <p class="tl-org">ENTI · Universitat de Barcelona</p>
-            <p data-i18n="tl1_d">Expediente sobresaliente: <strong>10.0 en Análisis y Gestión de Riesgos</strong>, 9.61 en Redes III, 8.91 en Gobernanza y Normativas. Criptografía avanzada, técnicas de ataque en red, análisis de malware, IA aplicada a ciberseguridad y sistemas paralelos y distribuidos.</p>
+            <p class="tl-desc" data-i18n="tl1_d">Criptografía avanzada, técnicas de ataque en red, análisis de malware, IA aplicada a ciberseguridad, gestión de riesgos, gobernanza y cumplimiento. Formación técnica con la profundidad de un máster especializado.</p>
           </div>
         </div>
         <div class="tl-item reveal">
@@ -366,7 +567,7 @@
             <span class="tl-date">Sep 2023 — Jul 2024</span>
             <h3 data-i18n="tl2_t">Grado en Ingeniería Telemática</h3>
             <p class="tl-org">Universitat Pompeu Fabra</p>
-            <p data-i18n="tl2_d">Base sólida en telecomunicaciones: pila TCP/IP, modelo OSI, teoría de la señal y diseño de arquitecturas de red.</p>
+            <p class="tl-desc" data-i18n="tl2_d">Base sólida en telecomunicaciones: pila TCP/IP, modelo OSI, teoría de la señal y diseño de arquitecturas de red.</p>
           </div>
         </div>
         <div class="tl-item reveal">
@@ -375,7 +576,7 @@
             <span class="tl-date">Sep 2021 — Sep 2022</span>
             <h3 data-i18n="tl3_t">Instructor de Informática</h3>
             <p class="tl-org">Pensactius · Manresa</p>
-            <p data-i18n="tl3_d">Formación teórica y práctica a grupos de estudiantes en fundamentos de informática, mantenimiento de hardware, configuración de redes LAN y buenas prácticas de seguridad. Soporte técnico de nivel 1 y administración de la infraestructura IT del aula.</p>
+            <p class="tl-desc" data-i18n="tl3_d">Formación teórica y práctica a grupos de estudiantes en fundamentos de informática, redes LAN y buenas prácticas de seguridad. Soporte técnico de nivel 1 y administración de la infraestructura IT del aula.</p>
           </div>
         </div>
         <div class="tl-item reveal">
@@ -388,34 +589,90 @@
         </div>
       </div>
 
-      <!-- Certificaciones / plataformas -->
-      <div class="certs">
-        <div class="cert glass reveal">
-          <span class="cert-icon">🎯</span>
-          <div>
-            <h3>TryHackMe</h3>
-            <p data-i18n="cert1">Práctica activa y constante: labs, retos de ciberseguridad y CTFs.</p>
+      <div class="tl-extra chips reveal">
+        <span data-i18n="tlx1">Español · Catalán · Árabe nativos</span>
+        <span data-i18n="tlx2">Inglés C1 avanzado</span>
+        <span>Python for Data Science — Udemy</span>
+        <span>HTML5 &amp; CSS — W3Schools</span>
+      </div>
+    </section>
+
+    <!-- ===== RECURSOS ===== -->
+    <section id="recursos" class="container section">
+      <p class="eyebrow reveal" data-i18n="rs_eyebrow">Recursos</p>
+      <h2 class="t-anim" data-i18n="rs_title">Recursos que recomiendo.</h2>
+      <p class="section-lead reveal" data-i18n="rs_lead">Plataformas con las que practico y aprendo. Si estás empezando en ciberseguridad, son un buen punto de partida.</p>
+
+      <div class="resources-grid">
+        <div class="res-col glass reveal">
+          <h3 data-i18n="rs1">Práctica general</h3>
+          <div class="res-item">
+            <a href="https://tryhackme.com" target="_blank" rel="noopener">TryHackMe</a>
+            <p data-i18n="rs1_1">Rutas guiadas de ciberseguridad, ideal para empezar.</p>
+          </div>
+          <div class="res-item">
+            <a href="https://www.hackthebox.com" target="_blank" rel="noopener">Hack The Box</a>
+            <p data-i18n="rs1_2">Máquinas y retos de dificultad realista.</p>
+          </div>
+          <div class="res-item">
+            <a href="https://portswigger.net/web-security" target="_blank" rel="noopener">PortSwigger Web Security Academy</a>
+            <p data-i18n="rs1_3">El mejor recurso gratuito de seguridad web.</p>
+          </div>
+          <div class="res-item">
+            <a href="https://overthewire.org" target="_blank" rel="noopener">OverTheWire</a>
+            <p data-i18n="rs1_4">Wargames para dominar Linux y la terminal.</p>
+          </div>
+          <div class="res-item">
+            <a href="https://letsdefend.io" target="_blank" rel="noopener">LetsDefend</a>
+            <p data-i18n="rs1_5">Práctica de analista SOC con alertas reales.</p>
           </div>
         </div>
-        <div class="cert glass reveal">
-          <span class="cert-icon">🗣️</span>
-          <div>
-            <h3 data-i18n="cert2_t">Inglés C1 avanzado</h3>
-            <p data-i18n="cert2">Además de español, catalán y árabe nativos.</p>
+
+        <div class="res-col glass reveal">
+          <h3 data-i18n="rs2">Seguridad en la nube</h3>
+          <div class="res-item">
+            <a href="http://flaws.cloud" target="_blank" rel="noopener">flaws.cloud</a>
+            <p data-i18n="rs2_1">Retos clásicos de seguridad en AWS.</p>
+          </div>
+          <div class="res-item">
+            <a href="https://github.com/RhinoSecurityLabs/cloudgoat" target="_blank" rel="noopener">CloudGoat</a>
+            <p data-i18n="rs2_2">Entornos AWS vulnerables por diseño.</p>
+          </div>
+          <div class="res-item">
+            <a href="https://pwnedlabs.io" target="_blank" rel="noopener">Pwned Labs</a>
+            <p data-i18n="rs2_3">Laboratorios de seguridad cloud (AWS, Azure, GCP).</p>
+          </div>
+          <div class="res-item">
+            <a href="https://cloud.hacktricks.wiki" target="_blank" rel="noopener">HackTricks Cloud</a>
+            <p data-i18n="rs2_4">Referencia de técnicas de pentesting cloud.</p>
+          </div>
+          <div class="res-item">
+            <a href="https://learn.microsoft.com" target="_blank" rel="noopener">Microsoft Learn</a>
+            <p data-i18n="rs2_5">Preparación gratuita de AZ-900, SC-900 y más.</p>
           </div>
         </div>
-        <div class="cert glass reveal">
-          <span class="cert-icon">📜</span>
-          <div>
-            <h3>Python for Data Science</h3>
-            <p data-i18n="cert3">Udemy · 2022</p>
+
+        <div class="res-col glass reveal">
+          <h3 data-i18n="rs3">Referencia y comunidad</h3>
+          <div class="res-item">
+            <a href="https://owasp.org" target="_blank" rel="noopener">OWASP</a>
+            <p data-i18n="rs3_1">Estándares y proyectos de seguridad de aplicaciones.</p>
           </div>
-        </div>
-        <div class="cert glass reveal">
-          <span class="cert-icon">📜</span>
-          <div>
-            <h3>HTML5 &amp; CSS</h3>
-            <p data-i18n="cert4">W3Schools · 2022</p>
+          <div class="res-item">
+            <a href="https://attack.mitre.org" target="_blank" rel="noopener">MITRE ATT&amp;CK</a>
+            <p data-i18n="rs3_2">Marco de tácticas y técnicas de adversarios.</p>
+          </div>
+          <div class="res-item">
+            <a href="https://www.incibe.es/incibe-cert" target="_blank" rel="noopener">INCIBE-CERT</a>
+            <p data-i18n="rs3_3">Avisos y guías del CERT nacional español.</p>
+          </div>
+          <div class="res-item">
+            <a href="https://ctftime.org" target="_blank" rel="noopener">CTFtime</a>
+            <p data-i18n="rs3_4">Calendario mundial de competiciones CTF.</p>
+          </div>
+          <div class="res-item">
+            <a href="https://www.cisecurity.org/cis-benchmarks" target="_blank" rel="noopener">CIS Benchmarks</a>
+            <p data-i18n="rs3_5">Guías de configuración segura por tecnología.</p>
           </div>
         </div>
       </div>
@@ -429,11 +686,20 @@
           <h2 data-i18n="ct_title">¿Hablamos?</h2>
           <p data-i18n="ct_lead">Busco prácticas o una primera posición junior en ciberseguridad. Si crees que puedo aportar a tu equipo, escríbeme — respondo en menos de 24 horas.</p>
           <div class="contact-links">
-            <a href="mailto:hamzaelhaddadsabri@gmail.com">✉️ hamzaelhaddadsabri@gmail.com</a>
-            <a href="https://www.linkedin.com/in/hamzaelhaddadsabri" target="_blank" rel="noopener">💼 linkedin.com/in/hamzaelhaddadsabri</a>
-            <a href="https://github.com/HamzaEnti" target="_blank" rel="noopener">🐙 github.com/HamzaEnti</a>
+            <a href="mailto:hamzaelhaddadsabri@gmail.com">
+              <svg class="ic"><use href="#i-mail"/></svg> hamzaelhaddadsabri@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/hamzaelhaddadsabri" target="_blank" rel="noopener">
+              <svg class="ic"><use href="#i-network"/></svg> linkedin.com/in/hamzaelhaddadsabri
+            </a>
+            <a href="https://github.com/HamzaEnti" target="_blank" rel="noopener">
+              <svg class="ic"><use href="#i-code"/></svg> github.com/HamzaEnti
+            </a>
           </div>
-          <a class="btn btn-ghost btn-cv2" href="assets/CV_Hamza_El_Haddad_Sabri.pdf" download data-i18n="ct_cv">⬇ Descargar CV en PDF</a>
+          <a class="btn btn-ghost" href="assets/CV_Hamza_El_Haddad_Sabri.pdf" download>
+            <svg class="ic"><use href="#i-download"/></svg>
+            <span data-i18n="ct_cv">Descargar CV en PDF</span>
+          </a>
         </div>
 
         <form id="contactForm" class="contact-form" action="https://formspree.io/f/TU_ID_FORMSPREE" method="POST">
@@ -456,8 +722,59 @@
     </section>
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer class="footer container">
-    <p>© <span id="year">2026</span> Hamza El Haddad Sabri · <span data-i18n="footer">Diseñado y construido por mí, en Manresa</span> 🌱</p>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="nav-logo" href="#inicio">
+          <span class="logo-mark">
+            <img class="logo-photo" src="assets/foto.jpg" alt="" onerror="this.style.opacity='0'">
+            <span aria-hidden="true">H</span>
+          </span>
+          <span class="logo-name">Hamza El Haddad Sabri</span>
+        </a>
+        <p class="footer-tag" data-i18n="ft_tag">// cybersecurity engineering — offensive mindset, defensive discipline</p>
+        <div class="footer-social">
+          <a class="s-gmail" href="mailto:hamzaelhaddadsabri@gmail.com" aria-label="Gmail">
+            <svg viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+          </a>
+          <a class="s-linkedin" href="https://www.linkedin.com/in/hamzaelhaddadsabri" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
+          </a>
+          <a class="s-github" href="https://github.com/HamzaEnti" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.73.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+          </a>
+          <a class="s-thm" href="https://tryhackme.com" target="_blank" rel="noopener" aria-label="TryHackMe">
+            <svg viewBox="0 0 24 24" style="fill:none;stroke:var(--ink-soft);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round"><path d="M7 18.5h10a4 4 0 0 0 .9-7.9 6 6 0 0 0-11.7-.6A4.5 4.5 0 0 0 7 18.5z"/><path d="M9.5 12.5l2 2-2 2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="ft_menu">Menú</h3>
+        <ul>
+          <li><a href="#sobre-mi" data-i18n="nav_about">Sobre mí</a></li>
+          <li><a href="#dominios" data-i18n="nav_domains">Dominios</a></li>
+          <li><a href="#proyectos" data-i18n="nav_projects">Proyectos</a></li>
+          <li><a href="#certificaciones" data-i18n="nav_certs">Certificaciones</a></li>
+          <li><a href="#contacto" data-i18n="nav_contact">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="ft_res">Recursos</h3>
+        <ul>
+          <li><a href="https://tryhackme.com" target="_blank" rel="noopener">TryHackMe</a></li>
+          <li><a href="https://www.hackthebox.com" target="_blank" rel="noopener">Hack The Box</a></li>
+          <li><a href="https://owasp.org" target="_blank" rel="noopener">OWASP</a></li>
+          <li><a href="https://attack.mitre.org" target="_blank" rel="noopener">MITRE ATT&amp;CK</a></li>
+          <li><a href="https://ctftime.org" target="_blank" rel="noopener">CTFtime</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> Hamza El Haddad Sabri. <span data-i18n="ft_rights">Todos los derechos reservados.</span></p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
