@@ -2,7 +2,7 @@
 
 Portafolio personal de ciberseguridad. Web estática bilingüe (ES/EN), diseño glass estilo Apple en blanco y verde. **Sin frameworks, sin build, sin coste de hosting.**
 
-🌐 **Demo:** `https://hamzaenti.github.io/portfolio/` (una vez publicado)
+🌐 **En vivo:** https://h4zz0.github.io
 
 ## Estructura
 
@@ -32,24 +32,13 @@ Si no hay foto, la web muestra automáticamente un monograma "H" verde — no se
 
 > Mientras no lo configures, el botón "Enviar" abre el cliente de correo del visitante con el mensaje ya redactado (funciona igualmente).
 
-## 🚀 Publicar en GitHub Pages (gratis, 0 €/mes)
+## 🚀 Publicación (YA está en vivo)
 
-1. Crea una cuenta en [github.com](https://github.com) si no la tienes (ya tienes: **HamzaEnti**).
-2. Crea un repositorio nuevo llamado **`HamzaEnti.github.io`** (público).
-   - Con ese nombre exacto, tu web quedará en `https://hamzaenti.github.io/` (la URL más limpia).
-3. Sube los archivos. Desde esta carpeta:
-   ```bash
-   git init
-   git add .
-   git commit -m "Portfolio inicial"
-   git branch -M main
-   git remote add origin https://github.com/HamzaEnti/HamzaEnti.github.io.git
-   git push -u origin main
-   ```
-4. En el repositorio → **Settings → Pages** → comprueba que Source sea `Deploy from a branch`, rama `main`, carpeta `/ (root)`.
-5. En 1–2 minutos tu web estará en **https://hamzaenti.github.io/** 🎉
+La web está publicada con GitHub Pages en el repositorio **`H4zz0/H4zz0.github.io`** (rama `main`, carpeta raíz) y accesible en **https://h4zz0.github.io**.
 
-### Actualizar la web más adelante
+> Nota: el usuario de GitHub pasó de `HamzaEnti` a **`H4zz0`**, así que GitHub renombró el repo automáticamente y la URL antigua (`hamzaenti.github.io`) dejó de funcionar.
+
+### Actualizar la web
 Edita los archivos y:
 ```bash
 git add .
